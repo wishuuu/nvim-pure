@@ -8,6 +8,10 @@ M = {
 	require("wishu/plugins/lspzero"),
 	require("wishu/plugins/nvimtree"),
 	require("wishu/plugins/surround"),
+	require("wishu/plugins/highlightedyank"),
+	require("wishu/plugins/floatterm"),
+	require("wishu/plugins/copilot"),
+	require("wishu/plugins/lighline"),
 }
 
 return M

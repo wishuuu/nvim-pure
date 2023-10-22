@@ -1,7 +1,8 @@
 return {
   "machakann/vim-highlightedyank",
-  lazy = false,
+  event = 'TextYankPost *',
   config = function ()
-    let g:highlightedyank_highlight_duration = 300
+    vim.g.highlightedyank_highlight_duration = 300
+    vim.cmd [[highlight HighlightedyankRegion ctermbg=237 guibg=#5A90B9]]
   end
 }
