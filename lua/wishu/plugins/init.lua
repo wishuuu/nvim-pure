@@ -12,6 +12,8 @@ M = {
 	require("wishu/plugins/floatterm"),
 	require("wishu/plugins/copilot"),
 	require("wishu/plugins/lighline"),
+	require("wishu/plugins/conform"),
+	require("wishu/plugins/gen"),
 }
 
 return M
