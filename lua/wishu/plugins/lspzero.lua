@@ -51,7 +51,7 @@ return {
 			vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 		end)
 
-		local ensure_installed = {'lua_ls', 'rust_analyzer', 'jedi_language_server'}
+		local ensure_installed = {'lua_ls', 'rust_analyzer'}
 
 		require('mason').setup({})
 		require('mason-lspconfig').setup({
