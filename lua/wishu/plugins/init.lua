@@ -14,6 +14,7 @@ M = {
 	require("wishu/plugins/lighline"),
 	require("wishu/plugins/conform"),
 	require("wishu/plugins/gen"),
+	require("wishu/plugins/cellular"),
 }
 
 return M
