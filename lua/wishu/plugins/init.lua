@@ -15,6 +15,8 @@ M = {
 	require("wishu/plugins/conform"),
 	require("wishu/plugins/gen"),
 	require("wishu/plugins/cellular"),
+	require("wishu/plugins/autopairs"),
+	require("wishu/plugins/autotags"),
 }
 
 return M
