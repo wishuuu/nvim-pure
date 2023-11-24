@@ -6,7 +6,6 @@ M = {
     require("wishu/plugins/undotree"),
     require("wishu/plugins/lazygit"),
     require("wishu/plugins/lspzero"),
-    require("wishu/plugins/nvimtree"),
     require("wishu/plugins/surround"),
     require("wishu/plugins/highlightedyank"),
     require("wishu/plugins/floatterm"),

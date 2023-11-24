@@ -1,10 +1,3 @@
--- TODO:
--- INFO:
--- NOTE:
--- WARN:
--- OPTIM:
--- TEST:
--- FIX:
 return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -66,5 +59,6 @@ return {
                 -- pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon. You'll likely get false positives
             }
         }
+        vim.keymap.set("n", "<leader>td", function() vim.cmd.TodoTelescope() end)
     end
 }
