@@ -10,12 +10,12 @@ return {
             require('mason-nvim-dap').setup()
             local opts = { buffer = bufnr, remap = false }
 
-            vim.keymap.set("n", "<F9>", function() require('dap').continue() end, opts)
-            vim.keymap.set("n", "<F7>", function() require('dap').step_over() end, opts)
-            vim.keymap.set("n", "<F8>", function() require('dap').step_into() end, opts)
-            vim.keymap.set("n", "<C-F7>", function() require('dap').step_out() end, opts)
-            vim.keymap.set("n", "<leader>tb", function() require('dap').toggle_breakpoint() end, opts)
-            vim.keymap.set("n", "<leader>tB",
+            vim.keymap.set("n", "<leader>dcn", function() require('dap').continue() end, opts)
+            vim.keymap.set("n", "<leader>dso", function() require('dap').step_over() end, opts)
+            vim.keymap.set("n", "<leader>dsi", function() require('dap').step_into() end, opts)
+            vim.keymap.set("n", "<leader>dsO", function() require('dap').step_out() end, opts)
+            vim.keymap.set("n", "<leader>dtb", function() require('dap').toggle_breakpoint() end, opts)
+            vim.keymap.set("n", "<leader>dtB",
                 function() require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, opts)
 
             local dap = require('dap')
