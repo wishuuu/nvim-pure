@@ -15,6 +15,9 @@ M = {
     require("wishu/plugins/cellular"),
     require("wishu/plugins/autotags"),
     require("wishu/plugins/todocomments"),
+    require("wishu/plugins/dap"),
+    require("wishu/plugins/daptext"),
+    require("wishu/plugins/dapui"),
 }
 
 return M
