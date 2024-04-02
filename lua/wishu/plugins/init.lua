@@ -17,6 +17,7 @@ M = {
     require("wishu/plugins/todocomments"),
     require("wishu/plugins/dap"),
     require("wishu/plugins/fugitive"),
+    require("wishu/plugins/autopairs"),
 }
 
 return M

@@ -31,9 +31,10 @@ return {
 
         cmp.setup({
             mapping = cmp.mapping.preset.insert({
-                ['<C-o>'] = cmp.mapping.select_prev_item(cmp_select),
-                ['<C-p>'] = cmp.mapping.select_next_item(cmp_select),
+                ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
+                ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
                 ['<C-i>'] = cmp.mapping.confirm({ select = true }),
+                ['<C-l>'] = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             })
         })
@@ -63,8 +64,6 @@ return {
             vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
             vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
             vim.keymap.set("n", "<leader>=", function() vim.lsp.buf.format() end, opts)
-
-            lsp_format_on_save(bufnr)
         end)
 
         local ensure_installed = { 'lua_ls', 'rust_analyzer' }
