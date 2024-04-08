@@ -19,6 +19,7 @@ M = {
     require("wishu/plugins/fugitive"),
     require("wishu/plugins/autopairs"),
     require("wishu/plugins/commentary"),
+    require("wishu/plugins/vimbegood"),
 }
 
 return M
