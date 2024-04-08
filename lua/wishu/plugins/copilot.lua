@@ -1,12 +1,12 @@
 return {
     "zbirenbaum/copilot.lua",
-    event = "InsertEnter",
+    cmd = "Copilot",
     opts = {
         suggestion = {
             enabled = true,
             auto_trigger = true,
             keymap = {
-                accept = "<C-p>",
+                accept = "<C-g>",
                 next = "<C-]>",
                 prev = "<C-[",
             }
